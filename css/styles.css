@@ -1,0 +1,62 @@
+/*========== FONT ==========*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;400;700&display=swap');
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+h1,h2,h3,h4{font-family: 'PT Serif', serif; margin: 0;}
+h1{font-size: 4rem;} h2{font-size: 3.8;}
+h3{font-size: 3rem;} h4{font-size: 2.8rem;}
+img{width: 100%;}
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.bold{font-weight: 700;}
+.regular{font-weight: 400;}
+.Uppercase{text-transform: uppercase;}
+.text-center{text-align: center;}
+/*============================= HEADER =============================*/
+.header-content{padding-top: 8rem;}
+
+@media (min-width: 768px) {
+    .header-content{
+        padding-bottom: 7rem;
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+}
+.header-content h1{ padding-bottom: 5rem;} 
+/*============================= MAIN =============================*/
+.theCreativeCrew{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+@media (min-width: 768px){
+    .theCreativeCrew{grid-template-columns: repeat(3, 1fr);}
+}
+.card-img{
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.rotate{transform: rotate(90deg);}
+.rol{min-width: 20rem; margin: 9.5rem 0 0 -9rem; font-size: 1.2rem;}
+.down{padding-top: 7rem;}
+
+@media (min-width: 768px){
+    .down2{padding-top: 7rem;}
+    .up2{ padding-top: 0rem;}
+}
+/*============================= FOOTER =============================*/
+.footer p{color: #AFB9C8;}
